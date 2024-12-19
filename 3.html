@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Styling with JavaScript</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 20px;
+            cursor: pointer;
+        }
+        #circle {
+            width: 100px;
+            height: 100px;
+            background-color: lightgreen;
+            border-radius: 50%;
+            margin: 20px;
+            transition: transform 0.3s;
+        }
+        #button {
+            padding: 10px 20px;
+            background-color: coral;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div id="circle" onmouseover="scaleUp()" onmouseout="scaleDown()">Hover over me</div>
+    <button id="button" onclick="toggleVisibility()">Toggle Visibility</button>
+    <p id="text">Here is some text to show or hide.</p>
+    <div id="rectangle" onclick="changeRectangleColor()">Click me to change color</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
